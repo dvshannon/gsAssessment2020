@@ -59,10 +59,12 @@ a {
 }
 
 /* mobile styling */
+.desktop {
+    display: none;
+}
 main {
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 100%);
-    
 }
 main .container {
     width: 90%;
@@ -77,6 +79,11 @@ main .grid {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
+}
+
+main .grid p {
+    color: #55565A;
+    font-weight: 600;
 }
 
 h1 {
@@ -123,14 +130,97 @@ form .grid {
 
 /* media queries */
 
-/* @media screen and (min-width: 620px){
+@media screen and (min-width: 600px){
+    body {
+        font-size: 1.3em;
+    }
 
-} */
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
 
-@media screen and (min-width: 960px){
+    .desktop-banner {
+        background: url('https://via.placeholder.com/2000x600.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center center;
+        height: 600px;
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        display: block;
+    }
+    .d-container {
+        width: 95%;
+        margin: 0 auto;
+        max-width: 65em;
+    }
+
+    main {
+        background: none;
+    }
+    main .container {
+        width: 600px;
+        position: absolute;
+        top: 10%;
+        padding: 20px;
+        box-shadow: 0px 15px 15px 10px rgba(0,0,0,0.075);
+    }
+
+    main .grid {
+        justify-items: baseline;
+        grid-template-columns: 1fr;
+    }
+
+    .desktop-divPH {
+        padding: 1.5em 2em;
+        position: absolute;
+        top: 0;
+        right: 35px;
+        background: #fff;
+        box-shadow: 8px 0px 5px 10px rgba(0,0,0,0.075);
+    }
     
+
+    .container-flex {
+        margin-top: 600px;
+        padding: 1em 10px 1em;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .d-grid {
+        display: grid;
+        grid-column-gap: 20px;
+        align-items: center;
+    }
+
+    .desktop-sec {
+        grid-area: 1 / 2 / span 2;
+    }
+
+    .d-grid2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-column-gap: 50px;
+    }
+
+    #firstname {
+        grid-area: 2 / 1 / span 1;
+    }
+
+    form .grid {
+        grid-template-columns: 3% 97%;
+    }
 }
 
 @media screen and (min-width: 1200px){
-    
+    form .grid {
+        padding: 20px 0;
+    }
 }
