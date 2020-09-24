@@ -220,6 +220,15 @@ form .grid {
 }
 
 @media screen and (min-width: 1200px){
+    .d-container, .container-flex {
+        max-width: 65em;
+    }
+    
+    .desktop-divPH {
+        padding: 1em 1.25em;
+        right: 60px;
+        max-width: 10em;
+    }
     form .grid {
         padding: 20px 0;
     }
