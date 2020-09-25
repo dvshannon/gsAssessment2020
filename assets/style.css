@@ -89,14 +89,15 @@ main .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-items: center;
 }
 
 main .grid p {
     color: #55565A;
     font-weight: 600;
 }
-
+.mobile-divPH {
+    width: 75px;
+}
 h1 {
     font-size: 1.5em;
     line-height: 1.25;
@@ -112,7 +113,7 @@ h2 {
     margin-top: -100px;
     background: #fff;
     padding: 1em 10px 1em;
-    max-width: 40em;
+    max-width: 65em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -187,6 +188,11 @@ form .grid {
     main .grid {
         justify-items: baseline;
         grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .mobile-divPH {
+        width: 100%;
     }
 
     .desktop-divPH {
