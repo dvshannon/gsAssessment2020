@@ -220,16 +220,28 @@ form .grid {
 }
 
 @media screen and (min-width: 1200px){
-    .d-container, .container-flex {
-        max-width: 65em;
+    .d-container, .container-flex, .container {
+        max-width: 55em;
     }
-    
+    .desktop-banner {
+        height: 485px;
+    }
     .desktop-divPH {
         padding: 1em 1.25em;
-        right: 60px;
+        right: 160px;
         max-width: 10em;
+    }
+    .container-flex {
+        margin-top: 485px;
+        padding: 2em 0;
     }
     form .grid {
         padding: 20px 0;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .desktop-divPH {
+        right: 285px;
     }
 }
