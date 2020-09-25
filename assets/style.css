@@ -144,6 +144,14 @@ form .grid {
 }
 
 /* media queries */
+@media screen and (max-width: 400px) {
+    main .container {
+        overflow-x: hidden;
+    }
+    main .grid p {
+        white-space: nowrap;
+    }
+}
 
 @media screen and (min-width: 800px){
     body {
